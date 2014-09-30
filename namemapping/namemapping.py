@@ -9,6 +9,7 @@ import json
 from urlparse import urlparse
 from collections import defaultdict
 
+url = "http://yboss.yahooapis.com/ysearch/web"
 # READ IN YAHOO BOSS API CREDENTIAL FROM HIDDEN CONFIG FILE '.credential'
 file_credential = open(".credential")
 OAUTH_CONSUMER_KEY = file_credential.readline().strip()
@@ -46,10 +47,8 @@ def yahoosearch(search_term):
     response = result.read()
     return response
 
-
 def main():
     # HIT API AND STORE THE RAW RESPONSE
-    url = "http://yboss.yahooapis.com/ysearch/web"
     inputfile = open(args.input, 'r')
     datafile = open('data.json', 'w')
 
@@ -93,7 +92,7 @@ def main():
             pass
     
     for key in mapping.keys():
-        print chr(1).join([key, str(mapping[key])])
+        print >>outputfile, chr(1).join([key, str(mapping[key])])
     datafile.close()
     outputfile.close()
 
