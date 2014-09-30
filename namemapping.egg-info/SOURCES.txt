@@ -1,0 +1,8 @@
+README.rst
+setup.py
+namemapping.egg-info/PKG-INFO
+namemapping.egg-info/SOURCES.txt
+namemapping.egg-info/dependency_links.txt
+namemapping.egg-info/entry_points.txt
+namemapping.egg-info/requires.txt
+namemapping.egg-info/top_level.txt
