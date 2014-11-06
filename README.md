@@ -6,19 +6,17 @@ This is a Python library used to map company names to its company website
 
 This package is still under development and there are some work you have to do to make it work.
 
-1. You have to run the following pip command to install:
+(1) You have to run the following pip command to install:
 ```
 pip install --pre namemapping
 ``` 
 
-2. You can use it either as a command line tool like 'wget' or import in your python code as 'import urllib2'
+(2) You can use it either as a command line tool like 'wget' or import in your python code as 'import urllib2'
 To use it as a command line:
-
 Create a file '.credential' in your working directory with the first line to be consumer_key and the second line to be consumer_secret 
-
 Create the input file and name it as 'input.txt'  
 
-3. Then you can run command 
+(3) Then you can run command 
 ```
 namemapping
 ```
